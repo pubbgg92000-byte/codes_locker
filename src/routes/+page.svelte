@@ -1,5 +1,9 @@
 <script lang="ts">
-  import { ArrowRight, CheckCircle2, Database, LockKeyhole, Sparkles } from 'lucide-svelte';
+  import ArrowRight from 'lucide-svelte/dist/icons/arrow-right.svelte';
+  import CircleCheck from 'lucide-svelte/dist/icons/circle-check.svelte';
+  import Database from 'lucide-svelte/dist/icons/database.svelte';
+  import LockKeyhole from 'lucide-svelte/dist/icons/lock-keyhole.svelte';
+  import Sparkles from 'lucide-svelte/dist/icons/sparkles.svelte';
 
   let { data } = $props();
 </script>
@@ -63,7 +67,7 @@
 
   <section class="mx-auto grid max-w-6xl gap-4 px-4 py-12 md:grid-cols-3">
     <div class="panel p-5">
-      <CheckCircle2 class="mb-4 text-mint" size={24} />
+      <CircleCheck class="mb-4 text-mint" size={24} />
       <h2 class="font-bold">Track status</h2>
       <p class="mt-2 text-sm leading-6 text-slate-600 dark:text-slate-400">Used coupons are crossed out and removed from the available view.</p>
     </div>

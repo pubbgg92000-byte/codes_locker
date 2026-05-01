@@ -1,5 +1,6 @@
 <script lang="ts">
-  import { Moon, Sun } from 'lucide-svelte';
+  import Moon from 'lucide-svelte/dist/icons/moon.svelte';
+  import Sun from 'lucide-svelte/dist/icons/sun.svelte';
 
   let dark = $state(false);
 

@@ -1,7 +1,8 @@
 <script lang="ts">
   import '../app.css';
   import ThemeToggle from '$lib/components/ThemeToggle.svelte';
-  import { LogOut, ShieldCheck } from 'lucide-svelte';
+  import LogOut from 'lucide-svelte/dist/icons/log-out.svelte';
+  import ShieldCheck from 'lucide-svelte/dist/icons/shield-check.svelte';
 
   let { data, children } = $props();
 </script>

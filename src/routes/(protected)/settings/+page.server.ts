@@ -1,11 +1,11 @@
-import { fail } from '@sveltejs/kit';
+import { fail } from "@sveltejs/kit";
 
 export const load = async ({ locals }) => {
   const { user } = await locals.safeGetSession();
   const { data: profile } = await locals.supabase
-    .from('profiles')
-    .select('display_name, created_at')
-    .eq('id', user!.id)
+    .from("profiles")
+    .select("display_name, created_at")
+    .eq("id", user!.id)
     .maybeSingle();
 
   return { profile };
@@ -17,15 +17,15 @@ export const actions = {
     const form = await request.formData();
 
     const { error } = await locals.supabase
-      .from('profiles')
+      .from("profiles")
       .upsert({
         id: user!.id,
-        display_name: String(form.get('display_name') ?? '').trim() || null
+        display_name: String(form.get("display_name") ?? "").trim() || null,
       })
-      .eq('id', user!.id);
+      .eq("id", user!.id);
 
     if (error) return fail(400, { error: error.message });
 
     return { saved: true };
-  }
+  },
 };

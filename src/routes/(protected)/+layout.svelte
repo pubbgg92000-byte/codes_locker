@@ -1,5 +1,7 @@
 <script lang="ts">
-  import { Bot, LayoutDashboard, Settings } from 'lucide-svelte';
+  import Bot from 'lucide-svelte/dist/icons/bot.svelte';
+  import LayoutDashboard from 'lucide-svelte/dist/icons/layout-dashboard.svelte';
+  import Settings from 'lucide-svelte/dist/icons/settings.svelte';
 
   let { children } = $props();
 </script>

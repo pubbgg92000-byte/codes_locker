@@ -76,5 +76,3 @@ The schema lives in [`supabase/schema.sql`](supabase/schema.sql).
 4. Deploy.
 
 The project uses `@sveltejs/adapter-vercel`, so no extra adapter changes are needed.
-# codes_locker
-# codes_locker

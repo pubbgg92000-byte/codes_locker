@@ -1,4 +1,4 @@
-export type CouponStatus = 'available' | 'used' | 'expired';
+export type CouponStatus = "available" | "used" | "expired";
 
 export type Brand = {
   id: string;
