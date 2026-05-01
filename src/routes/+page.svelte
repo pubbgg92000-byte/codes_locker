@@ -1,9 +1,18 @@
 <script lang="ts">
+import {
+  CopyCheck,
+  Pencil,
+  Moon,
+  Sun,
+  Bot,
+  Settings,
+  Sparkles
+} from "lucide-svelte"
   import ArrowRight from 'lucide-svelte/dist/icons/arrow-right.svelte';
   import CircleCheck from 'lucide-svelte/dist/icons/circle-check.svelte';
   import Database from 'lucide-svelte/dist/icons/database.svelte';
   import LockKeyhole from 'lucide-svelte/dist/icons/lock-keyhole.svelte';
-  import Sparkles from 'lucide-svelte/dist/icons/sparkles.svelte';
+  // import Sparkles from 'lucide-svelte/dist/icons/sparkles.svelte';
 
   let { data } = $props();
 </script>

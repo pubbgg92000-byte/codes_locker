@@ -1,6 +1,15 @@
 <script lang="ts">
-  import Moon from 'lucide-svelte/dist/icons/moon.svelte';
-  import Sun from 'lucide-svelte/dist/icons/sun.svelte';
+import {
+  CopyCheck,
+  Pencil,
+  Moon,
+  Sun,
+  Bot,
+  Settings,
+  Sparkles
+} from "lucide-svelte"
+  // import Moon from 'lucide-svelte/dist/icons/moon.svelte';
+  // import Sun from 'lucide-svelte/dist/icons/sun.svelte';
 
   let dark = $state(false);
 

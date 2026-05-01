@@ -1,7 +1,16 @@
 <script lang="ts">
+import {
+  CopyCheck,
+  Pencil,
+  Moon,
+  Sun,
+  Bot,
+  Settings,
+  Sparkles
+} from "lucide-svelte"
   import { parseCouponLines } from '$lib/coupons';
   import type { CouponDraft } from '$lib/types';
-  import Sparkles from 'lucide-svelte/dist/icons/sparkles.svelte';
+  // import Sparkles from 'lucide-svelte/dist/icons/sparkles.svelte';
 
   let { form } = $props();
   let text = $state('BigBasket: 100 off 100\nBigBasket: 150 cashback on 200\nBigBasket: 100 off 199\nSHEIN: 1000 flat off\nMyntra: 50% off');

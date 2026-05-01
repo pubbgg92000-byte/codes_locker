@@ -1,10 +1,19 @@
 <script lang="ts">
   import type { Brand, Coupon, CouponType } from "$lib/types";
-  import Check from "lucide-svelte/dist/icons/check.svelte";
-  import CopyCheck from "lucide-svelte/dist/icons/copy-check.svelte";
-  import Pencil from "lucide-svelte/dist/icons/pencil.svelte";
+  import { Check } from "lucide-svelte";
+  import {
+  CopyCheck,
+  Pencil,
+  Moon,
+  Sun,
+  Bot,
+  Settings,
+  Sparkles
+} from "lucide-svelte"
+  // import CopyCheck from "lucide-svelte/dist/icons/copy-check.svelte";
+  // import Pencil from "lucide-svelte/dist/icons/pencil.svelte";
   import RotateCcw from "lucide-svelte/dist/icons/rotate-ccw.svelte";
-  import Trash2 from "lucide-svelte/dist/icons/trash-2.svelte";
+  import { Trash2 } from "lucide-svelte";
   import X from "lucide-svelte/dist/icons/x.svelte";
 
   let {
